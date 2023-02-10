@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "Christmas-Lights/1.0.0": {
+        "runtime": {
+          "Christmas-Lights.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Christmas-Lights/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
