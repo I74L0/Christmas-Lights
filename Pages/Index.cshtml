@@ -4,22 +4,46 @@
     ViewData["Title"] = "Home page";
 }
 
-<div class="container">
+<div class="main-container">
     <div class="lights">
-        <div class="light"></div>
-        <div class="light"></div>
-        <div class="light"></div>
-        <div class="light"></div>
-        <div class="light"></div>
-        <div class="light"></div>
-        <div class="light"></div>
+        <div class="light">
+            <input type="color" hidden>
+        </div>
+        <div class="light">
+            <input type="color" hidden>
+        </div>
+        <div class="light">
+            <input type="color" hidden>
+        </div>
+        <div class="light">
+            <input type="color" hidden>
+        </div>
+        <div class="light">
+            <input type="color" hidden>
+        </div>
+        <div class="light">
+            <input type="color" hidden>
+        </div>
+        <div class="light">
+            <input type="color" hidden>
+        </div>
     </div>
     <div>
         <h1>Christmas Lights</h1>
     </div>
-    <div class="button">
-        <div id="selector"></div>
-        <div id="on">ON</div>
-        <div id="off">OFF</div>
+    <div class="control">
+        <div class="button">
+            <div id="selector"></div>
+            <div id="on">ON</div>
+            <div id="off">OFF</div>
+        </div>
+        <div>
+            <label for="interval">Interval</label><br>
+            <input name="interval" type="number" min="0.1" step="any">
+        </div>
+        <div>
+            <label for="intensity">Intensity</label><br>
+            <input name="intensity" type="number">
+        </div>
     </div>
 </div>
