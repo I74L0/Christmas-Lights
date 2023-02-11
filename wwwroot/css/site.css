@@ -1,5 +1,6 @@
 :root {
-  --interval: .8s;
+  --interval: 1.6s;
+  --intensity: 5px;
 }
 
 html {
@@ -33,23 +34,21 @@ body {
   border-radius: 50%;
   width: 6.5vw;
   height: 15vh;
-  animation: light-reverse .8s reverse;
+  animation: turn-off .8s forwards;
+  cursor: pointer;
 }
 
-@keyframes light-reverse {
+@keyframes turn-off {
   0% {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+    box-shadow: 0 0 var(--intensity) var(--intensity);
+  }
+
+  100% {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
     box-shadow: 0;
   }
 
-  75% {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.01));
-  }
-
-  100% {
-    background-image: none;
-    box-shadow: 0 0 0.8rem 0.2rem;
-  }
 }
 
 .light:nth-child(odd) {
@@ -62,23 +61,25 @@ body {
   background-color: #6f6;
 }
 
-.on .light {
-  animation: light .8s forwards;
+.on .light:nth-child(odd) {
+  animation: toggle var(--interval) infinite;
 }
 
-@keyframes light {
-  0% {
+.on .light:nth-child(even) {
+  animation: toggle var(--interval) calc(var(--interval)/2) infinite;
+}
+
+@keyframes toggle {
+
+  0%,
+  100% {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
     box-shadow: 0;
   }
 
-  75% {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0));
-  }
-
-  100% {
-    background-image: none;
-    box-shadow: 0 0 0.8rem 0.2rem;
+  50% {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+    box-shadow: 0 0 var(--intensity) var(--intensity);
   }
 }
 

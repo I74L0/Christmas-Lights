@@ -13,3 +13,12 @@ inputs.forEach(element => {
     });
 });
 
+document.getElementById("interval").addEventListener("blur", function () {
+    if (this.value >= 1)
+        document.documentElement.style.setProperty('--interval', this.value + 's');
+});
+
+document.getElementById("intensity").addEventListener("blur", function () {
+    if (this.value > 0 && this.value <= 20)
+        document.documentElement.style.setProperty('--intensity', this.value + 'px');
+});

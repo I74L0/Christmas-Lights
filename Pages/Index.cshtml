@@ -38,12 +38,12 @@
             <div id="off">OFF</div>
         </div>
         <div>
-            <label for="interval">Interval</label><br>
-            <input name="interval" type="number" min="0.1" step="any">
+            <label for="interval">Interval of time (in seconds)</label><br>
+            <input id="interval" type="number" min="1" step="any" value="1.6">
         </div>
         <div>
-            <label for="intensity">Intensity</label><br>
-            <input name="intensity" type="number">
+            <label for="intensity">Intensity (in pixels)</label><br>
+            <input id="intensity" type="number" min="0.1" max="20" step="any" value="5">
         </div>
     </div>
 </div>
