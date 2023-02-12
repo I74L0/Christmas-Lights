@@ -19,6 +19,6 @@ document.getElementById("interval").addEventListener("blur", function () {
 });
 
 document.getElementById("intensity").addEventListener("blur", function () {
-    if (this.value > 0 && this.value <= 20)
+    if (this.value > 10 && this.value <= 40)
         document.documentElement.style.setProperty('--intensity', this.value + 'px');
 });

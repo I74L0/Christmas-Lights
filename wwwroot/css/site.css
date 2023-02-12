@@ -9,9 +9,13 @@ html {
 }
 
 body {
-  background-color: #222;
+  background-color: #111;
   color: #fff;
   overflow: hidden;
+}
+
+.container {
+  max-width: 100% !important;
 }
 
 .main-container {
@@ -25,23 +29,34 @@ body {
 }
 
 .lights {
+  width: 100%;
   display: flex;
-  gap: 10px;
+  justify-content: space-evenly;
+  border-top: 1vh solid #333;
 }
 
 .light {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   border-radius: 50%;
-  width: 6.5vw;
+  width: 2.5vw;
   height: 15vh;
   animation: turn-off .8s forwards;
   cursor: pointer;
 }
 
+.light::before {
+  content: "";
+  display: block;
+  background-color: #333;
+  width: 2.5vw;
+  height: 30%;
+  border-radius: 5% 5% 50% 50%;
+}
+
 @keyframes turn-off {
   0% {
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
-    box-shadow: 0 0 var(--intensity) var(--intensity);
+    box-shadow: 0 10px calc(var(--intensity)*2) var(--intensity);
   }
 
   100% {
@@ -79,7 +94,7 @@ body {
 
   50% {
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
-    box-shadow: 0 0 var(--intensity) var(--intensity);
+    box-shadow: 0 10px calc(var(--intensity)*2) var(--intensity);
   }
 }
 
@@ -142,4 +157,12 @@ h1 {
   left: 0 !important;
   right: auto !important;
   border-radius: 1rem 0 0 1rem !important;
+}
+
+.control input {
+  background-color: transparent;
+  padding-left: 5px;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 10px;
 }
