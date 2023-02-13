@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "KYzgtHjFjPo5k0q4Sw76EXW4A5hxQD/04byW1pr3i9g=",
+  "Hash": "lwpIaBMIZXYJBuoYQhcL7zacQdIjRMksfnohWJAGCoE=",
   "Source": "Christmas-Lights",
   "BasePath": "_content/Christmas-Lights",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\wamp64\\www\\Projects\\Christmas-Lights\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\Christmas-Lights.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\wamp64\\www\\Projects\\Christmas-Lights\\wwwroot\\audio\\wind-chimes-bells.mp3",
+      "SourceId": "Christmas-Lights",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\wamp64\\www\\Projects\\Christmas-Lights\\wwwroot\\",
+      "BasePath": "_content/Christmas-Lights",
+      "RelativePath": "audio/wind-chimes-bells.mp3",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\audio\\wind-chimes-bells.mp3"
     },
     {
       "Identity": "C:\\wamp64\\www\\Projects\\Christmas-Lights\\wwwroot\\css\\site.css",

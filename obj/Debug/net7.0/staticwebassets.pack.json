@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\Christmas-Lights.bundle.scp.css"
     },
     {
+      "Id": "C:\\wamp64\\www\\Projects\\Christmas-Lights\\wwwroot\\audio\\wind-chimes-bells.mp3",
+      "PackagePath": "staticwebassets\\audio\\wind-chimes-bells.mp3"
+    },
+    {
       "Id": "C:\\wamp64\\www\\Projects\\Christmas-Lights\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
